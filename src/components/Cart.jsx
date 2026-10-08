@@ -11,7 +11,20 @@ const Cart = () => {
 
   return (
     <div>
-     <h1>할 일 목록</h1>
+      <button onClick={() => dispatch(addItem({ id: 1, name: "딸기" }))}>
+        딸기 추가
+      </button>
+      <br></br>
+      <button onClick={() => dispatch(addItem({ id: 2, name: "새우" }))}>
+        새우 추가
+      </button>
+      <br></br>
+      <button onClick={() => dispatch(addItem({ id: 3, name: "꽃게" }))}>
+        꽃게 추가
+      </button>
+      <br></br>
+
+      <button onClick={() => dispatch(clearItem())}>장바구니 비우기</button>
 
       <ul>
         {items.map((item) => (
