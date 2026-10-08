@@ -1,10 +1,10 @@
 import React from 'react'
-import Cart from './components/Cart'
+import GetTest from './GetTest'
 
 const App = () => {
   return (
     <div>
-      <Cart />
+      <GetTest />
     </div>
   )
 }
